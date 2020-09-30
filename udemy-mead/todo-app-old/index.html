@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>do it</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+    <link href="/images/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container container--margin">
+            <!-- <h1 class="header__title">DO IT</h1> -->
+        <i class="fa fas fa-code fa-3x"></i>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search-text" class="input" type="text" placeholder="filter items">
+            <label class="checkbox">
+                <input type="checkbox" id="hide-completed"> hide completed
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="todos"></div>
+        <form id="new-todo">
+            <input type="text" class="input" placeholder="something to do" name="text">
+            <button class="button">add something</button>
+        </form>
+    </div>
+    <script src="/scripts/uuidv4.js"></script>
+    <script src="/scripts/todo-functions.js"></script>
+    <script src="/scripts/todo-app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>notes</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container container--margin">
+                <i class="fa fas fa-code fa-3x"></i>
+            </div>
+        </div>
+        <div class="container">
+            <span id="last-updated"></span>
+            <input id="search-text" type="text" placeholder="Filter notes" class="input">
+            <select id="filter-by" class="dropdown">
+                <option value="byEdited">Sort by last edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetical">Sort alphabetically</option>
+            </select>
+            <div id="notes"></div>
+            <button id="create-note" class="button">Create Note</button>  
+        </div>
+        <script src="/scripts/index-bundle.js"></script>
+    </body>
+</html>
